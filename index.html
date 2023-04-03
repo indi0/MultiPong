@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Multi Pong</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js" integrity="sha512-3RlxD1bW34eFKPwj9gUXEWtdSMC59QqIqHnD8O/NoTwSJhgxRizdcFVQhUMFyTp5RwLTDL0Lbcqtl8b7bFAzog==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </head>
+
+    <body>
+        <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+
+        <script>
+            const firebaseConfig = {
+                apiKey: "AIzaSyAKo_00KstGqgbHiF11jociEvliD1Xikw8",
+                authDomain: "multipong-46515.firebaseapp.com",
+                databaseURL: "https://multipong-46515-default-rtdb.europe-west1.firebasedatabase.app",
+                projectId: "multipong-46515",
+                storageBucket: "multipong-46515.appspot.com",
+                messagingSenderId: "190617665266",
+                appId: "1:190617665266:web:361ad06f58a13d6a855a6b",
+            };
+            firebase.initializeApp(firebaseConfig);
+        </script>
+
+        <script src="app.js"></script>
+        <script src="Player.js"></script>
+        <script src="Ball.js"></script>
+        <script src="Score.js"></script>
+    </body>
+</html>
